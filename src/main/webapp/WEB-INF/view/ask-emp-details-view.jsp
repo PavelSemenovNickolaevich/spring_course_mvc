@@ -30,7 +30,10 @@
     <br><br>
     Which car do you want?
     <br>
-    <form:radiobuttons path="carBrands" items="${employee.carBrands}"/>
+    <form:radiobuttons path="car" items="${employee.carBrands}"/>
+    <br><br>
+    Foreign Language(s)
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
     <br><br>
 
     <input type="submit" value="Ok">
