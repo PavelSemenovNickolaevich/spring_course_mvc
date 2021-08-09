@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="forr" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Paul Skynet
@@ -19,6 +20,7 @@
 <form:form action='showDetails' modelAttribute="employee">
 
     Name <form:input path="name"/>
+    <forr:errors path="name"/>
     <br><br>
     Surname <form:input path="surname"/>
     <br><br>
